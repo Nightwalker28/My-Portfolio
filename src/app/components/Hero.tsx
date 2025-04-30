@@ -1,27 +1,27 @@
 "use client";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
+import { AuroraText } from "@/app/components/magicui/aurora-text";
 
 export default function Hero() {
   return (
     <section className="min-h-screen w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-black text-white relative overflow-hidden">
       {/* Text content */}
       <div className="z-10 max-w-xl py-16">
-      <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-        Hi, I’m Maad.<br />
-        I’m a{" "}
-        <span className="text-indigo-400">
+      <div className="text-4xl md:text-5xl font-bold leading-tight">
+        Hi, I'm Maad.<br/>I'm a{" "}
+        <AuroraText className="inline-block">
           <Typewriter
             words={["Developer", "Gamer", "Diver"]}
             loop={0}
             cursor
             cursorStyle="|"
-            typeSpeed={100}
-            deleteSpeed={80}
-            delaySpeed={1500}
+            typeSpeed={140}
+            deleteSpeed={100}
+            delaySpeed={1800}
           />
-        </span>
-      </h1>
+        </AuroraText>
+      </div>
         <div className="flex gap-4">
           <a
             href="#projects"

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
+
 export function TechStackCard() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
